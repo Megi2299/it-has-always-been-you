@@ -1,0 +1,1838 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: #f8f2ec;
+    color: #493b36;
+    font-family: "Inter", sans-serif;
+}
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 40px 24px;
+}
+
+.eyebrow {
+    margin-bottom: 50px;
+
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: #a27b72;
+}
+
+.story {
+    margin-bottom: 45px;
+
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.9;
+}
+
+.reveal p {
+    margin-bottom: 8px;
+
+    font-size: 14px;
+    color: #9b7770;
+}
+
+.reveal h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(42px, 8vw, 75px);
+    font-weight: 400;
+    line-height: 1.05;
+
+    max-width: 750px;
+}
+
+.heart {
+    display: block;
+
+    margin-top: 20px;
+
+    font-size: 25px;
+    color: #b96f72;
+}
+
+#startButton {
+    margin-top: 50px;
+
+    padding: 14px 25px;
+
+    border: 1px solid #b98c83;
+    border-radius: 100px;
+
+    background: transparent;
+    color: #654e48;
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+#startButton:hover {
+    background: #b98c83;
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+/* -------------------------
+   OUR STORY
+------------------------- */
+
+.our-story {
+    min-height: 100vh;
+    padding: 110px 24px;
+
+    background: #efe4dc;
+
+    text-align: center;
+}
+
+.section-label {
+    margin-bottom: 80px;
+
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: #a27b72;
+}
+
+.timeline {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    padding: 15px 0;
+}
+
+.timeline-time {
+    margin-bottom: 8px;
+
+    font-size: 13px;
+    color: #9b7770;
+}
+
+.timeline-item h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 400;
+
+    color: #493b36;
+}
+
+.timeline-line {
+    display: block;
+
+    width: 1px;
+    height: 65px;
+
+    margin: 15px auto;
+
+    background: #cba9a0;
+}
+
+.rejection h2 {
+    font-size: 65px;
+    font-style: italic;
+}
+
+.tiny-note {
+    margin-top: 8px;
+
+    font-size: 12px;
+    font-style: italic;
+
+    color: #9b7770;
+}
+
+.daculi {
+    font-style: italic;
+    color: #a65f63 !important;
+}
+
+.you-were-right {
+    margin-top: 12px;
+
+    font-size: 15px;
+}
+
+.story-ending {
+    max-width: 600px;
+    margin: 120px auto 20px;
+}
+
+.story-ending p {
+    margin-bottom: 15px;
+
+    font-size: 14px;
+    color: #9b7770;
+}
+
+.story-ending h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(38px, 6vw, 60px);
+    font-weight: 400;
+}
+
+.story-ending span {
+    display: block;
+
+    margin-top: 20px;
+
+    font-size: 22px;
+    color: #b96f72;
+}
+
+/* -------------------------
+   MY FAVOURITE KIND OF LOVE
+------------------------- */
+
+.favourite-love {
+    padding: 120px 24px;
+    background: #f8f2ec;
+}
+
+.section-intro {
+    max-width: 650px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+.section-intro .section-label {
+    margin-bottom: 25px;
+}
+
+.section-intro h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(38px, 6vw, 58px);
+    font-weight: 400;
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+.section-intro > p:last-child {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #806b65;
+}
+
+
+/* cards */
+
+.love-cards {
+    max-width: 950px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.love-card {
+    min-height: 310px;
+    padding: 45px 38px;
+
+    border: 1px solid #dfccc4;
+    border-radius: 24px;
+
+    background: rgba(255, 255, 255, 0.35);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.love-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(73, 59, 54, 0.08);
+}
+
+.card-icon {
+    display: block;
+    margin-bottom: 25px;
+
+    font-size: 27px;
+}
+
+.card-small {
+    margin-bottom: 8px;
+
+    font-size: 10px !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #a27b72 !important;
+}
+
+.love-card h3 {
+    margin-bottom: 15px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 27px;
+    font-weight: 400;
+
+    color: #493b36;
+}
+
+.love-card p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.8;
+
+    color: #74615b;
+}
+
+
+/* epo daculi */
+
+.daculi-break {
+    max-width: 700px;
+    margin: 120px auto 20px;
+
+    text-align: center;
+}
+
+.daculi-break > p {
+    margin-bottom: 8px;
+
+    font-size: 13px;
+    color: #9b7770;
+}
+
+.daculi-break h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(40px, 7vw, 65px);
+    font-weight: 400;
+    font-style: italic;
+
+    color: #a65f63;
+}
+
+.daculi-break span {
+    display: block;
+    margin-top: 10px;
+
+    font-size: 12px;
+    font-style: italic;
+    color: #9b7770;
+}
+
+
+/* phone */
+
+@media (max-width: 700px) {
+
+    .love-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .love-card {
+        min-height: auto;
+        padding: 35px 28px;
+    }
+
+}
+
+/* -------------------------
+   OUR FIRST KISS
+------------------------- */
+
+.first-kiss {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 100px 24px;
+
+    background: #493b36;
+    color: #f8f2ec;
+
+    text-align: center;
+}
+
+.kiss-content {
+    max-width: 720px;
+}
+
+.first-kiss .section-label {
+    margin-bottom: 55px;
+    color: #cda59b;
+}
+
+.first-kiss h2 {
+    margin-bottom: 50px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(50px, 8vw, 80px);
+    font-weight: 400;
+}
+
+.kiss-text {
+    max-width: 570px;
+    margin: auto;
+}
+
+.kiss-text p {
+    margin: 25px 0;
+
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(20px, 3vw, 27px);
+    font-style: italic;
+    font-weight: 400;
+
+    line-height: 1.6;
+
+    color: #eadbd4;
+}
+
+.kiss-heart {
+    display: block;
+
+    margin-top: 55px;
+
+    font-size: 24px;
+    color: #d99091;
+}
+
+/* -------------------------
+   DEVELOPER LOVE
+------------------------- */
+
+.developer-love {
+    padding: 120px 24px;
+
+    background: #f8f2ec;
+}
+
+.developer-intro {
+    max-width: 650px;
+    margin: 0 auto 70px;
+
+    text-align: center;
+}
+
+.developer-intro .section-label {
+    margin-bottom: 25px;
+}
+
+.developer-intro h2 {
+    margin-bottom: 20px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(40px, 6vw, 60px);
+    font-weight: 400;
+}
+
+.developer-intro > p:last-child {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #806b65;
+}
+
+
+/* fake code editor */
+
+.code-window {
+    max-width: 720px;
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background: #302725;
+
+    box-shadow:
+        0 25px 60px rgba(73, 59, 54, 0.15);
+}
+
+.code-header {
+    height: 50px;
+    padding: 0 18px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    background: #3a302d;
+}
+
+.code-dots {
+    display: flex;
+    gap: 7px;
+}
+
+.code-dots span {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #b98c83;
+}
+
+.code-header p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 11px;
+    color: #bca9a3;
+}
+
+.code-window pre {
+    padding: 40px;
+
+    overflow-x: auto;
+
+    color: #eadbd4;
+
+    font-family: Consolas, Monaco, monospace;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.code-pink {
+    color: #e2a4a6;
+}
+
+.code-purple {
+    color: #c7a9ce;
+}
+
+.code-comment {
+    color: #8e7973;
+}
+
+
+/* message underneath */
+
+.developer-message {
+    max-width: 680px;
+    margin: 90px auto 0;
+
+    text-align: center;
+}
+
+.developer-message h3 {
+    margin-bottom: 35px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(30px, 5vw, 43px);
+    font-weight: 400;
+}
+
+.developer-message p {
+    margin: 20px 0;
+
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.9;
+
+    color: #6f5b55;
+}
+
+.developer-message .this-one {
+    margin-top: 40px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 25px;
+    font-style: italic;
+
+    color: #a65f63;
+}
+
+/* =========================
+   05 — OUR SOUNDTRACK
+========================= */
+
+.soundtrack {
+    padding: 120px 24px;
+
+    background: #efe4dc;
+}
+
+.soundtrack-intro {
+    max-width: 700px;
+
+    margin: 0 auto 70px;
+
+    text-align: center;
+}
+
+.soundtrack-intro .section-label {
+    margin-bottom: 25px;
+}
+
+.soundtrack-intro h2 {
+    margin-bottom: 18px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(40px, 6vw, 60px);
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+.soundtrack-intro > p:last-child {
+    font-size: 14px;
+    font-style: italic;
+
+    color: #806b65;
+}
+
+
+/* Songs */
+
+.song-list {
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    border-top: 1px solid #ceb6ad;
+}
+
+.song {
+    min-height: 90px;
+
+    display: grid;
+    grid-template-columns: 55px 1fr 40px;
+    align-items: center;
+
+    padding: 18px 10px;
+
+    border-bottom: 1px solid #ceb6ad;
+
+    color: #493b36;
+    text-decoration: none;
+
+    transition:
+        padding 0.3s ease,
+        background 0.3s ease;
+}
+
+a.song {
+    cursor: pointer;
+}
+
+.song:hover {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.song-number {
+    font-size: 10px;
+    letter-spacing: 2px;
+
+    color: #a27b72;
+}
+
+.song-info h3 {
+    margin-bottom: 4px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.song-info p {
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #9b7770;
+}
+
+.song-info .song-memory {
+    margin-top: 6px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 12px;
+    font-style: italic;
+
+    letter-spacing: 0;
+    text-transform: none;
+
+    color: #a65f63;
+}
+
+.song-heart {
+    justify-self: end;
+
+    font-size: 20px;
+
+    color: #b96f72;
+
+    transition: transform 0.3s ease;
+}
+
+.song:hover .song-heart {
+    transform: scale(1.3);
+}
+
+.playlist-note {
+    margin-top: 55px;
+
+    text-align: center;
+}
+
+.playlist-note p {
+    font-family: "DM Serif Display", serif;
+    font-size: 18px;
+    font-style: italic;
+
+    color: #9b7770;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .eyebrow {
+        margin-bottom: 35px;
+    }
+
+    .love-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .love-card {
+        min-height: auto;
+
+        padding: 35px 28px;
+    }
+
+    .code-window pre {
+        padding: 30px 22px;
+
+        font-size: 12px;
+    }
+
+}
+
+/* =========================
+   06 — OUR MEMORIES
+========================= */
+
+.memories {
+    padding: 120px 24px 140px;
+
+    background: #f8f2ec;
+
+    overflow: hidden;
+}
+
+
+/* INTRO */
+
+.memories-intro {
+    max-width: 680px;
+
+    margin: 0 auto 80px;
+
+    text-align: center;
+}
+
+.memories-intro .section-label {
+    margin-bottom: 25px;
+}
+
+.memories-intro h2 {
+    margin-bottom: 20px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(40px, 6vw, 60px);
+    font-weight: 400;
+    line-height: 1.1;
+
+    color: #493b36;
+}
+
+.memories-intro > p:last-child {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.8;
+
+    color: #806b65;
+}
+
+
+/* =========================
+   CAROUSEL
+========================= */
+
+.memory-carousel {
+    max-width: 1100px;
+    height: 570px;
+
+    margin: 0 auto;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* The space where the Polaroids live */
+
+.carousel-stage {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    perspective: 1200px;
+
+    touch-action: pan-y;
+}
+
+
+/* =========================
+   POLAROIDS
+========================= */
+
+.polaroid {
+    width: 330px;
+    height: 450px;
+
+    position: absolute;
+
+    padding: 12px 12px 55px;
+
+    background: #fffdf9;
+
+    box-shadow:
+        0 18px 45px rgba(73, 59, 54, 0.16);
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transform:
+        translateX(0)
+        scale(0.7);
+
+    transition:
+        transform 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 0.45s ease,
+        filter 0.45s ease;
+
+    will-change: transform;
+}
+
+
+/* Actual photograph */
+
+.polaroid img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    background: #eaded7;
+}
+
+
+/* CENTER PHOTO */
+
+.polaroid.active {
+    z-index: 5;
+
+    opacity: 1;
+
+    pointer-events: auto;
+
+    transform:
+        translateX(0)
+        scale(1)
+        rotate(0deg);
+
+    filter: none;
+}
+
+
+/* IMMEDIATELY LEFT */
+
+.polaroid.prev-1 {
+    z-index: 4;
+
+    opacity: 0.82;
+
+    transform:
+        translateX(-245px)
+        scale(0.86)
+        rotate(-5deg);
+
+    filter: brightness(0.96);
+}
+
+
+/* IMMEDIATELY RIGHT */
+
+.polaroid.next-1 {
+    z-index: 4;
+
+    opacity: 0.82;
+
+    transform:
+        translateX(245px)
+        scale(0.86)
+        rotate(5deg);
+
+    filter: brightness(0.96);
+}
+
+
+/* FAR LEFT */
+
+.polaroid.prev-2 {
+    z-index: 3;
+
+    opacity: 0.42;
+
+    transform:
+        translateX(-410px)
+        scale(0.72)
+        rotate(-8deg);
+
+    filter: brightness(0.92);
+}
+
+
+/* FAR RIGHT */
+
+.polaroid.next-2 {
+    z-index: 3;
+
+    opacity: 0.42;
+
+    transform:
+        translateX(410px)
+        scale(0.72)
+        rotate(8deg);
+
+    filter: brightness(0.92);
+}
+
+
+/* =========================
+   ARROWS
+========================= */
+
+.carousel-button {
+    width: 52px;
+    height: 52px;
+
+    position: absolute;
+    top: 50%;
+    z-index: 20;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #dfccc4;
+    border-radius: 50%;
+
+    background: #fffdf9;
+    color: #765d56;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 32px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 25px rgba(73, 59, 54, 0.09);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+.carousel-button:hover {
+    background: #b98c83;
+    color: white;
+
+    transform:
+        translateY(-50%)
+        scale(1.08);
+}
+
+.carousel-button.prev {
+    left: 0;
+}
+
+.carousel-button.next {
+    right: 0;
+}
+
+
+/* =========================
+   PROGRESS
+========================= */
+
+.carousel-progress {
+    width: min(330px, 70%);
+
+    margin: 15px auto 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+}
+
+.progress-line {
+    height: 2px;
+
+    flex: 1;
+
+    overflow: hidden;
+
+    background: #dfccc4;
+}
+
+.progress-line span {
+    width: 6.25%;
+    height: 100%;
+
+    display: block;
+
+    background: #b96f72;
+
+    transition: width 0.4s ease;
+}
+
+.carousel-progress p {
+    min-width: 45px;
+
+    font-size: 10px;
+    letter-spacing: 1px;
+
+    color: #9b7770;
+}
+
+#currentPhoto {
+    color: #765d56;
+}
+
+.counter-divider {
+    margin: 0 3px;
+
+    color: #c7aaa1;
+}
+
+
+/* =========================
+   MEMORY NOTE
+========================= */
+
+.memory-note {
+    margin: 75px auto 0;
+
+    text-align: center;
+}
+
+.memory-note p {
+    font-size: 11px;
+    line-height: 2;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: #9b7770;
+}
+
+.memory-note span {
+    display: block;
+
+    margin-top: 18px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 28px;
+
+    color: #b96f72;
+}
+
+
+/* =========================
+   365 DAYS LATER
+========================= */
+
+.year-ending {
+    max-width: 800px;
+
+    margin: 130px auto 0;
+    padding-top: 100px;
+
+    border-top: 1px solid #dfccc4;
+
+    text-align: center;
+}
+
+.year-ending > p {
+    margin-bottom: 18px;
+
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #a27b72;
+}
+
+.year-ending h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(48px, 7vw, 75px);
+    font-weight: 400;
+    line-height: 1.1;
+
+    color: #493b36;
+}
+
+.year-ending > span {
+    display: block;
+
+    margin-top: 25px;
+
+    font-size: 25px;
+
+    color: #b96f72;
+}
+
+
+/* =========================
+   CAROUSEL — TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .memory-carousel {
+        height: 520px;
+    }
+
+    .polaroid {
+        width: 300px;
+        height: 410px;
+    }
+
+    .polaroid.prev-1 {
+        transform:
+            translateX(-190px)
+            scale(0.82)
+            rotate(-5deg);
+    }
+
+    .polaroid.next-1 {
+        transform:
+            translateX(190px)
+            scale(0.82)
+            rotate(5deg);
+    }
+
+    .polaroid.prev-2 {
+        transform:
+            translateX(-310px)
+            scale(0.65)
+            rotate(-8deg);
+    }
+
+    .polaroid.next-2 {
+        transform:
+            translateX(310px)
+            scale(0.65)
+            rotate(8deg);
+    }
+
+}
+
+
+/* =========================
+   CAROUSEL — PHONE
+========================= */
+
+@media (max-width: 600px) {
+
+    .memories {
+        padding:
+            100px 16px
+            110px;
+    }
+
+    .memories-intro {
+        margin-bottom: 50px;
+    }
+
+    .memory-carousel {
+        height: 465px;
+    }
+
+    .polaroid {
+        width: min(270px, 72vw);
+        height: 375px;
+
+        padding:
+            9px 9px
+            45px;
+    }
+
+
+    /* center */
+
+    .polaroid.active {
+        transform:
+            translateX(0)
+            scale(1)
+            rotate(0deg);
+    }
+
+
+    /* little peek from each side */
+
+    .polaroid.prev-1 {
+        opacity: 0.45;
+
+        transform:
+            translateX(-145px)
+            scale(0.75)
+            rotate(-5deg);
+    }
+
+    .polaroid.next-1 {
+        opacity: 0.45;
+
+        transform:
+            translateX(145px)
+            scale(0.75)
+            rotate(5deg);
+    }
+
+
+    /* hide far photos */
+
+    .polaroid.prev-2,
+    .polaroid.next-2 {
+        opacity: 0;
+    }
+
+
+    /* arrows */
+
+    .carousel-button {
+        width: 42px;
+        height: 42px;
+
+        font-size: 27px;
+
+        top: auto;
+        bottom: -3px;
+
+        transform: none;
+    }
+
+    .carousel-button:hover {
+        transform: scale(1.05);
+    }
+
+    .carousel-button.prev {
+        left: calc(50% - 60px);
+    }
+
+    .carousel-button.next {
+        right: calc(50% - 60px);
+    }
+
+
+    /* Progress below arrows */
+
+    .carousel-progress {
+        margin-top: 25px;
+    }
+
+    .memory-note {
+        margin-top: 65px;
+    }
+
+    .memory-note p {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .year-ending {
+        margin-top: 90px;
+        padding-top: 80px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .song {
+        grid-template-columns: 40px 1fr 25px;
+
+        min-height: 80px;
+
+        padding: 16px 5px;
+    }
+
+    .song:hover {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .song-info h3 {
+        font-size: 18px;
+    }
+
+}
+
+/* Memories — phone */
+
+@media (max-width: 600px) {
+
+    .memories {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .memories-intro {
+        margin-bottom: 70px;
+    }
+
+    .photo-gallery {
+        gap: 65px;
+    }
+
+    .memory-photo {
+        width: 90%;
+
+        padding: 10px 10px 35px;
+    }
+
+    .photo-left {
+        align-self: flex-start;
+
+        transform: rotate(-2deg);
+    }
+
+    .photo-right {
+        align-self: flex-end;
+
+        transform: rotate(2deg);
+    }
+
+    .memory-photo figcaption {
+        padding-top: 20px;
+
+        font-size: 15px;
+    }
+
+    .year-ending {
+        margin-top: 110px;
+    }
+
+}
+
+/* =========================
+   07 — FOR YOU
+========================= */
+
+.final-letter {
+    padding: 130px 24px 150px;
+
+    background: #efe4dc;
+}
+
+
+/* Heading */
+
+.letter-heading {
+    max-width: 700px;
+
+    margin: 0 auto 70px;
+
+    text-align: center;
+}
+
+.letter-heading .section-label {
+    margin-bottom: 25px;
+}
+
+.letter-heading h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(42px, 6vw, 62px);
+    font-weight: 400;
+    line-height: 1.1;
+
+    color: #493b36;
+}
+
+.letter-heading > span {
+    display: block;
+
+    margin-top: 22px;
+
+    font-size: 20px;
+
+    color: #b96f72;
+}
+
+
+/* The paper */
+
+.letter-paper {
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    padding: 75px 85px;
+
+    position: relative;
+
+    background: #fffaf5;
+
+    box-shadow:
+        0 25px 70px rgba(73, 59, 54, 0.11);
+}
+
+
+/* Tiny paper detail */
+
+.letter-paper::before {
+    content: "♥";
+
+    position: absolute;
+
+    top: 30px;
+    right: 35px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 15px;
+
+    color: #d4aaa2;
+}
+
+
+/* Normal paragraphs */
+
+.letter-paper > p,
+.letter-turn > p {
+    margin: 0 0 30px;
+
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 2;
+
+    color: #604e48;
+}
+
+.letter-paper strong {
+    font-weight: 500;
+
+    color: #493b36;
+}
+
+
+/* Daçuli im */
+
+.letter-paper .letter-opening {
+    margin-bottom: 40px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 30px;
+    font-style: italic;
+
+    color: #493b36;
+}
+
+
+/* Believing in me */
+
+.letter-paper .letter-emphasis {
+    margin: 45px 0;
+
+    padding-left: 25px;
+
+    border-left: 2px solid #d4aaa2;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.7;
+
+    color: #765d56;
+}
+
+
+/* Epo Daçuli */
+
+.letter-turn {
+    margin: 70px 0;
+
+    padding: 55px 30px;
+
+    border-top: 1px solid #e3d1ca;
+    border-bottom: 1px solid #e3d1ca;
+
+    text-align: center;
+}
+
+.letter-turn > p {
+    max-width: 560px;
+
+    margin: 0 auto 40px;
+}
+
+.letter-turn h3 {
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(35px, 6vw, 52px);
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.2;
+
+    color: #a65f63;
+}
+
+
+/* Ishte ti */
+
+.letter-heart {
+    margin: 75px 0;
+
+    text-align: center;
+}
+
+.letter-heart p {
+    margin: 10px 0;
+
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(25px, 4vw, 34px);
+    font-style: italic;
+
+    color: #493b36;
+}
+
+.letter-heart::after {
+    content: "♡";
+
+    display: block;
+
+    margin-top: 25px;
+
+    font-size: 24px;
+
+    color: #b96f72;
+}
+
+
+/* I'd choose you */
+
+.letter-paper .choose-you {
+    margin: 55px 0 75px;
+
+    text-align: center;
+
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(30px, 5vw, 42px);
+    font-style: italic;
+    line-height: 1.35;
+
+    color: #a65f63;
+}
+
+
+/* Signature */
+
+.letter-signature {
+    margin-top: 60px;
+
+    text-align: right;
+}
+
+.letter-signature p {
+    margin-bottom: 12px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 20px;
+
+    color: #493b36;
+}
+
+.letter-signature .love-you {
+    margin-top: 25px;
+
+    font-size: 25px;
+    font-style: italic;
+
+    color: #a65f63;
+}
+
+.letter-signature span {
+    display: block;
+
+    margin-top: 15px;
+
+    font-family: "DM Serif Display", serif;
+    font-size: 28px;
+    font-style: italic;
+
+    color: #493b36;
+}
+
+
+/* =========================
+   THE FINALE
+========================= */
+
+.story-finale {
+    min-height: 100vh;
+
+    padding: 100px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #493b36;
+    color: #f8f2ec;
+
+    text-align: center;
+}
+
+.finale-content {
+    max-width: 850px;
+}
+
+.finale-beginning {
+    margin-bottom: 50px;
+}
+
+.finale-beginning p {
+    margin: 7px 0;
+
+    font-size: 14px;
+    font-weight: 300;
+
+    color: #cdbab3;
+}
+
+.story-finale h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(48px, 8vw, 82px);
+    font-weight: 400;
+    line-height: 1.05;
+
+    color: #f8f2ec;
+}
+
+.finale-heart {
+    display: block;
+
+    margin-top: 30px;
+
+    font-size: 25px;
+
+    color: #d99091;
+}
+
+
+/* Developer ending */
+
+.final-code {
+    margin-top: 100px;
+
+    font-family: Consolas, Monaco, monospace;
+    font-size: 12px;
+
+    color: #ad9992;
+}
+
+.final-code > span:first-child {
+    color: #d7a1a3;
+}
+
+.code-symbol {
+    color: #c7a9ce;
+}
+
+.cursor {
+    margin-left: 2px;
+
+    color: #d99091;
+
+    animation: cursorBlink 1s infinite;
+}
+
+@keyframes cursorBlink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* =========================
+   LETTER — PHONE
+========================= */
+
+@media (max-width: 600px) {
+
+    .final-letter {
+        padding:
+            100px 16px
+            110px;
+    }
+
+    .letter-heading {
+        margin-bottom: 55px;
+    }
+
+    .letter-paper {
+        padding:
+            60px 28px
+            65px;
+    }
+
+    .letter-paper::before {
+        top: 22px;
+        right: 25px;
+    }
+
+    .letter-paper > p,
+    .letter-turn > p {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    .letter-paper .letter-opening {
+        font-size: 27px;
+    }
+
+    .letter-paper .letter-emphasis {
+        padding-left: 18px;
+
+        font-size: 18px;
+    }
+
+    .letter-turn {
+        margin: 55px 0;
+
+        padding:
+            45px 5px;
+    }
+
+    .letter-heart {
+        margin: 60px 0;
+    }
+
+    .letter-signature {
+        margin-top: 50px;
+    }
+
+    .story-finale {
+        min-height: 100svh;
+
+        padding:
+            90px 22px;
+    }
+
+    .final-code {
+        margin-top: 80px;
+
+        font-size: 10px;
+    }
+
+}
+
+/* =========================
+   SCROLL REVEAL
+========================= */
+
+.reveal-on-scroll {
+    opacity: 0;
+
+    transform: translateY(35px);
+
+    transition:
+        opacity 0.9s ease,
+        transform 0.9s ease;
+}
+
+.reveal-on-scroll.is-visible {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* Slightly slower reveal for important moments */
+
+.reveal-slow {
+    transition-duration: 1.3s;
+}
+
+
+/* Respect reduced-motion settings */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .reveal-on-scroll {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+}
